@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9A5EB86-1DA7-4217-94E8-21D856BBB746}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CQP</RootNamespace>
+    <AssemblyName>CQP</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentification.Designer.cs">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connexion.cs" />
+    <Compile Include="Consultatio_Filiere.cs" />
+    <Compile Include="Consultatio_Filiere.Designer.cs">
+      <DependentUpon>Consultatio_Filiere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultatio_Formateur.cs" />
+    <Compile Include="Consultatio_Formateur.Designer.cs">
+      <DependentUpon>Consultatio_Formateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultatio_Groupe.cs" />
+    <Compile Include="Consultatio_Groupe.Designer.cs">
+      <DependentUpon>Consultatio_Groupe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultatio_Module.cs" />
+    <Compile Include="Consultatio_Module.Designer.cs">
+      <DependentUpon>Consultatio_Module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultatio_Salle.cs" />
+    <Compile Include="Consultatio_Salle.Designer.cs">
+      <DependentUpon>Consultatio_Salle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conventionelle.cs" />
+    <Compile Include="conventionelle.Designer.cs">
+      <DependentUpon>conventionelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleReport1_2.cs">
+      <DependentUpon>ModuleReport1_2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report1_2.cs" />
+    <Compile Include="Report1_2.Designer.cs">
+      <DependentUpon>Report1_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit etat_avc.cs" />
+    <Compile Include="Edit etat_avc.Designer.cs">
+      <DependentUpon>Edit etat_avc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Edit etat.cs" />
+    <Compile Include="Edit etat.Designer.cs">
+      <DependentUpon>Edit etat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emploi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emploi.Designer.cs">
+      <DependentUpon>Emploi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Execution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Execution.Designer.cs">
+      <DependentUpon>Execution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_Filiere.cs" />
+    <Compile Include="Ajouter_Filiere.Designer.cs">
+      <DependentUpon>Ajouter_Filiere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_Formateur.cs" />
+    <Compile Include="Ajouter_Formateur.Designer.cs">
+      <DependentUpon>Ajouter_Formateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion.Designer.cs">
+      <DependentUpon>Gestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_Groupe.cs" />
+    <Compile Include="Ajouter_Groupe.Designer.cs">
+      <DependentUpon>Ajouter_Groupe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jourReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jourReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ajouter_Module.cs" />
+    <Compile Include="Ajouter_Module.Designer.cs">
+      <DependentUpon>Ajouter_Module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maj_Filiere.cs" />
+    <Compile Include="Maj_Filiere.Designer.cs">
+      <DependentUpon>Maj_Filiere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maj_Formateur.cs" />
+    <Compile Include="Maj_Formateur.Designer.cs">
+      <DependentUpon>Maj_Formateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maj_Groupe.cs" />
+    <Compile Include="Maj_Groupe.Designer.cs">
+      <DependentUpon>Maj_Groupe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maj_Module.cs" />
+    <Compile Include="Maj_Module.Designer.cs">
+      <DependentUpon>Maj_Module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maj_Salle.cs" />
+    <Compile Include="Maj_Salle.Designer.cs">
+      <DependentUpon>Maj_Salle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModuleReport1.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Realisation_formateur.cs" />
+    <Compile Include="Realisation_formateur.Designer.cs">
+      <DependentUpon>Realisation_formateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report1.Designer.cs">
+      <DependentUpon>Report1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report2.Designer.cs">
+      <DependentUpon>Report2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_Salle.cs" />
+    <Compile Include="Ajouter_Salle.Designer.cs">
+      <DependentUpon>Ajouter_Salle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report3.cs" />
+    <Compile Include="Report3.Designer.cs">
+      <DependentUpon>Report3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Avancement.cs" />
+    <Compile Include="Avancement.Designer.cs">
+      <DependentUpon>Avancement.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Authentification.resx">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultatio_Filiere.resx">
+      <DependentUpon>Consultatio_Filiere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultatio_Formateur.resx">
+      <DependentUpon>Consultatio_Formateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultatio_Groupe.resx">
+      <DependentUpon>Consultatio_Groupe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultatio_Module.resx">
+      <DependentUpon>Consultatio_Module.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultatio_Salle.resx">
+      <DependentUpon>Consultatio_Salle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conventionelle.resx">
+      <DependentUpon>conventionelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleReport1_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ModuleReport1_2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1_2.resx">
+      <DependentUpon>Report1_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit etat_avc.resx">
+      <DependentUpon>Edit etat_avc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit etat.resx">
+      <DependentUpon>Edit etat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emploi.resx">
+      <DependentUpon>Emploi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Execution.resx">
+      <DependentUpon>Execution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_Filiere.resx">
+      <DependentUpon>Ajouter_Filiere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_Formateur.resx">
+      <DependentUpon>Ajouter_Formateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion.resx">
+      <DependentUpon>Gestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_Groupe.resx">
+      <DependentUpon>Ajouter_Groupe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jourReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>jourReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_Module.resx">
+      <DependentUpon>Ajouter_Module.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maj_Filiere.resx">
+      <DependentUpon>Maj_Filiere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maj_Formateur.resx">
+      <DependentUpon>Maj_Formateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maj_Groupe.resx">
+      <DependentUpon>Maj_Groupe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maj_Module.resx">
+      <DependentUpon>Maj_Module.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maj_Salle.resx">
+      <DependentUpon>Maj_Salle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ModuleReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Realisation_formateur.resx">
+      <DependentUpon>Realisation_formateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.resx">
+      <DependentUpon>Report1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report2.resx">
+      <DependentUpon>Report2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_Salle.resx">
+      <DependentUpon>Ajouter_Salle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report3.resx">
+      <DependentUpon>Report3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Avancement.resx">
+      <DependentUpon>Avancement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CQP.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
