@@ -44,8 +44,6 @@ namespace CQP
             {
                 Connexion.cn.Close();
             }
-            comboBox1.Enabled = false;
-            comboBox2.Enabled = false;
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -61,7 +59,6 @@ namespace CQP
                 {
                     comboBox1.Items.Add(Connexion.dr[0]);
                 }
-                comboBox1.Enabled = true;
             }
             catch (Exception MSG)
             {
@@ -70,7 +67,7 @@ namespace CQP
             finally
             {
                 Connexion.cn.Close();
-            } 
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -85,13 +82,12 @@ namespace CQP
                     dataGridView1.Rows.Clear();
                     Connexion.dt.Columns.Clear();
                     Connexion.dt.Rows.Clear();
-                    Connexion.cmd = new OleDbCommand("select jour,periode,typeseance,idformateur,idmodule,idseance from seance where idgroupe='" + comboBox1.SelectedItem + "' and version in(select version from emploi where datediff('d',apartir,now())>=0 and datediff('d',apartir,now())<=(select min(datediff('d',apartir,now())) from emploi where  idgroupe='" + comboBox1.SelectedItem + "' and datediff('d',apartir,now())>=0 )) and idmodule not in(select idmodule from Eexecution where remarque='Achever') ", Connexion.cn);
+                    Connexion.cmd = new OleDbCommand("select jour,periode,typeseance,idformateur,idmodule,idseance from seance where idgroupe='" + comboBox1.SelectedItem + "' and version in(select version from emploi where datediff('d',apartir,now())>=0 and datediff('d',apartir,now())<=(select min(datediff('d',apartir,now())) from emploi where  idgroupe='" + comboBox1.SelectedItem + "' and datediff('d',apartir,now())>=0 )) ", Connexion.cn);
                     Connexion.dr = Connexion.cmd.ExecuteReader();
                     Connexion.dt.Load(Connexion.dr);
                     for (int i = 0; i < Connexion.dt.Rows.Count; i++)
                     {
-                        dataGridView1.Rows.Add(Connexion.dt.Rows[i][0], Connexion.dt.Rows[i][1], Connexion.dt.Rows[i][2], Connexion.dt.Rows[i][3], Connexion.dt.Rows[i][4],"Oui","En cours");
-                        
+                        dataGridView1.Rows.Add(Connexion.dt.Rows[i][0], Connexion.dt.Rows[i][1], Connexion.dt.Rows[i][2], Connexion.dt.Rows[i][3], Connexion.dt.Rows[i][4]);
                     }
 
                 }
@@ -118,11 +114,10 @@ namespace CQP
                     {
                         Connexion.cmd = new OleDbCommand("select count(idexecution) from Eexecution", Connexion.cn);
                         int c = (int)Connexion.cmd.ExecuteScalar() + 1;
-                        Connexion.cmd = new OleDbCommand("INSERT INTO Eexecution VALUES(" + c + ",'" + dataGridView1.Rows[i].Cells[5].Value + "','"+dateTimePicker1.Value+"','" + Connexion.dt.Rows[i][5] + "','" + dataGridView1.Rows[i].Cells[6].Value + "','" + dataGridView1.Rows[i].Cells[4].Value + "')", Connexion.cn);
+                        Connexion.cmd = new OleDbCommand("INSERT INTO Eexecution VALUES(" + c + ",'" + dataGridView1.Rows[i].Cells[5].Value + "',date(),'" + Connexion.dt.Rows[i][5] + "')", Connexion.cn);
                         Connexion.cmd.ExecuteNonQuery();
 
                     } MessageBox.Show("Operation avec succee", "Mise a jour", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Execution_Load(sender, e);
                 }
                 catch (Exception MSG)
                 {
@@ -134,18 +129,6 @@ namespace CQP
                 }
             
             
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            comboBox1.Text = "";
-            comboBox2.Text = "";
-            dataGridView1.Rows.Clear();
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-            comboBox2.Enabled = true;
         }
     }
 }

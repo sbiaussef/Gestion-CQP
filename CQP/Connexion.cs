@@ -11,7 +11,7 @@ namespace CQP
 {
     class Connexion
     {
-        public static OleDbConnection cn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\sbia\Desktop\CQP\CQP\CQP.mdb");
+        public static OleDbConnection cn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Application.StartupPath + "/CQP.mdb");
         public static OleDbCommand cmd=cn.CreateCommand();
         public static OleDbDataReader dr;
         public static DataTable dt = new DataTable();

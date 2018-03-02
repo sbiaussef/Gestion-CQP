@@ -8,7 +8,7 @@ namespace CQP
 {
     static class Program
     {
-        public static string s;
+       
         /// <summary>
         /// Point d'entrée principal de l'application.
         /// </summary>
@@ -17,7 +17,7 @@ namespace CQP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Gestion());
+            Application.Run(new Emploi());
         }
     }
 }

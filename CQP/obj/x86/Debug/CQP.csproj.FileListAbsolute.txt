@@ -1,1 +1,74 @@
-D:\cours\projet\CQP2\CQP\bin\x86\Debug\CQP.exe.config
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\bin\x86\Debug\CQP.exe.config
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\bin\x86\Debug\CQP.mdb
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\bin\x86\Debug\CQP.exe
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\bin\x86\Debug\CQP.pdb
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Authentification.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Consultatio_Filiere.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Consultatio_Formateur.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Consultatio_Groupe.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Consultatio_Module.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Consultatio_Salle.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.conventionelle.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Report1_2.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Edit_etat_avc.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Edit_etat.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Emploi.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Execution.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Ajouter_Filiere.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Ajouter_Formateur.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Gestion.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Ajouter_Groupe.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Ajouter_Module.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Maj_Filiere.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Maj_Formateur.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Maj_Groupe.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Maj_Module.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Maj_Salle.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Properties.Resources.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Realisation_formateur.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Report1.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Report2.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Ajouter_Salle.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Report3.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.Avancement.resources
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.csproj.GenerateResource.Cache
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.exe
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.pdb
+C:\Users\ACER ASPIRE\Desktop\CQP\CQP\obj\x86\Debug\CQP.csprojResolveAssemblyReference.cache
+C:\Users\sbia\Desktop\CQP\CQP\bin\x86\Debug\CQP.exe.config
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.exe
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.pdb
+C:\Users\sbia\Desktop\CQP\CQP\bin\x86\Debug\CQP.mdb
+C:\Users\sbia\Desktop\CQP\CQP\bin\x86\Debug\CQP.exe
+C:\Users\sbia\Desktop\CQP\CQP\bin\x86\Debug\CQP.pdb
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.csprojResolveAssemblyReference.cache
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Authentification.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Consultatio_Filiere.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Consultatio_Formateur.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Consultatio_Groupe.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Consultatio_Module.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Consultatio_Salle.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.conventionelle.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Report1_2.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Edit_etat_avc.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Edit_etat.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Emploi.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Execution.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Ajouter_Filiere.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Ajouter_Formateur.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Gestion.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Ajouter_Groupe.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Ajouter_Module.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Maj_Filiere.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Maj_Formateur.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Maj_Groupe.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Maj_Module.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Maj_Salle.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Properties.Resources.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Realisation_formateur.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Report1.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Report2.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Ajouter_Salle.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Report3.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.Avancement.resources
+C:\Users\sbia\Desktop\CQP\CQP\obj\x86\Debug\CQP.csproj.GenerateResource.Cache

@@ -22,7 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
+    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,23 +34,8 @@
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>bin\x86\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <DebugType>full</DebugType>
-    <PlatformTarget>x86</PlatformTarget>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
-    <OutputPath>bin\x86\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <Optimize>true</Optimize>
-    <DebugType>pdbonly</DebugType>
-    <PlatformTarget>x86</PlatformTarget>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  <PropertyGroup>
+    <StartupObject>CQP.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
@@ -72,49 +57,132 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ajouter_Filiere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter_Filiere.Designer.cs">
+      <DependentUpon>Ajouter_Filiere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_Formateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter_Formateur.Designer.cs">
+      <DependentUpon>Ajouter_Formateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_Groupe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter_Groupe.Designer.cs">
+      <DependentUpon>Ajouter_Groupe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_Module.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter_Module.Designer.cs">
+      <DependentUpon>Ajouter_Module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_Salle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter_Salle.Designer.cs">
+      <DependentUpon>Ajouter_Salle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Authentification.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Authentification.Designer.cs">
       <DependentUpon>Authentification.cs</DependentUpon>
     </Compile>
+    <Compile Include="Avancement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Avancement.Designer.cs">
+      <DependentUpon>Avancement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Connexion.cs" />
-    <Compile Include="Consultatio_Filiere.cs" />
+    <Compile Include="Consultatio_Filiere.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Consultatio_Filiere.Designer.cs">
       <DependentUpon>Consultatio_Filiere.cs</DependentUpon>
     </Compile>
-    <Compile Include="Consultatio_Formateur.cs" />
+    <Compile Include="Consultatio_Formateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Consultatio_Formateur.Designer.cs">
       <DependentUpon>Consultatio_Formateur.cs</DependentUpon>
     </Compile>
-    <Compile Include="Consultatio_Groupe.cs" />
+    <Compile Include="Consultatio_Groupe.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Consultatio_Groupe.Designer.cs">
       <DependentUpon>Consultatio_Groupe.cs</DependentUpon>
     </Compile>
-    <Compile Include="Consultatio_Module.cs" />
+    <Compile Include="Consultatio_Module.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Consultatio_Module.Designer.cs">
       <DependentUpon>Consultatio_Module.cs</DependentUpon>
     </Compile>
-    <Compile Include="Consultatio_Salle.cs" />
+    <Compile Include="Consultatio_Salle.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Consultatio_Salle.Designer.cs">
       <DependentUpon>Consultatio_Salle.cs</DependentUpon>
     </Compile>
-    <Compile Include="conventionelle.cs" />
+    <Compile Include="conventionelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="conventionelle.Designer.cs">
       <DependentUpon>conventionelle.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModuleReport1_2.cs">
-      <DependentUpon>ModuleReport1_2.rpt</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
+    <Compile Include="Edit etat.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Report1_2.cs" />
-    <Compile Include="Report1_2.Designer.cs">
-      <DependentUpon>Report1_2.cs</DependentUpon>
+    <Compile Include="Edit etat.Designer.cs">
+      <DependentUpon>Edit etat.cs</DependentUpon>
     </Compile>
-    <Compile Include="Edit etat_avc.cs" />
+    <Compile Include="Edit etat_avc.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Edit etat_avc.Designer.cs">
       <DependentUpon>Edit etat_avc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maj_Filiere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maj_Filiere.Designer.cs">
+      <DependentUpon>Maj_Filiere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maj_Formateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maj_Formateur.Designer.cs">
+      <DependentUpon>Maj_Formateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maj_Groupe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maj_Groupe.Designer.cs">
+      <DependentUpon>Maj_Groupe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maj_Module.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maj_Module.Designer.cs">
+      <DependentUpon>Maj_Module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maj_Salle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maj_Salle.Designer.cs">
+      <DependentUpon>Maj_Salle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModuleReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -125,10 +193,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Edit etat.cs" />
-    <Compile Include="Edit etat.Designer.cs">
-      <DependentUpon>Edit etat.cs</DependentUpon>
     </Compile>
     <Compile Include="Emploi.cs">
       <SubType>Form</SubType>
@@ -142,13 +206,17 @@
     <Compile Include="Execution.Designer.cs">
       <DependentUpon>Execution.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ajouter_Filiere.cs" />
-    <Compile Include="Ajouter_Filiere.Designer.cs">
-      <DependentUpon>Ajouter_Filiere.cs</DependentUpon>
+    <Compile Include="Filiere.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ajouter_Formateur.cs" />
-    <Compile Include="Ajouter_Formateur.Designer.cs">
-      <DependentUpon>Ajouter_Formateur.cs</DependentUpon>
+    <Compile Include="Filiere.Designer.cs">
+      <DependentUpon>Filiere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formateur.Designer.cs">
+      <DependentUpon>Formateur.cs</DependentUpon>
     </Compile>
     <Compile Include="Gestion.cs">
       <SubType>Form</SubType>
@@ -156,9 +224,17 @@
     <Compile Include="Gestion.Designer.cs">
       <DependentUpon>Gestion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ajouter_Groupe.cs" />
-    <Compile Include="Ajouter_Groupe.Designer.cs">
-      <DependentUpon>Ajouter_Groupe.cs</DependentUpon>
+    <Compile Include="Groupe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Groupe.Designer.cs">
+      <DependentUpon>Groupe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Impession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Impession.Designer.cs">
+      <DependentUpon>Impession.cs</DependentUpon>
     </Compile>
     <Compile Include="jourReport.cs">
       <AutoGen>True</AutoGen>
@@ -166,38 +242,23 @@
       <DependentUpon>jourReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Ajouter_Module.cs" />
-    <Compile Include="Ajouter_Module.Designer.cs">
-      <DependentUpon>Ajouter_Module.cs</DependentUpon>
+    <Compile Include="Module.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Maj_Filiere.cs" />
-    <Compile Include="Maj_Filiere.Designer.cs">
-      <DependentUpon>Maj_Filiere.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Maj_Formateur.cs" />
-    <Compile Include="Maj_Formateur.Designer.cs">
-      <DependentUpon>Maj_Formateur.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Maj_Groupe.cs" />
-    <Compile Include="Maj_Groupe.Designer.cs">
-      <DependentUpon>Maj_Groupe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Maj_Module.cs" />
-    <Compile Include="Maj_Module.Designer.cs">
-      <DependentUpon>Maj_Module.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Maj_Salle.cs" />
-    <Compile Include="Maj_Salle.Designer.cs">
-      <DependentUpon>Maj_Salle.cs</DependentUpon>
+    <Compile Include="Module.Designer.cs">
+      <DependentUpon>Module.cs</DependentUpon>
     </Compile>
     <Compile Include="ModuleReport1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModuleReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ModuleReport1_2.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Realisation_formateur.cs" />
+    <Compile Include="Realisation_formateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Realisation_formateur.Designer.cs">
       <DependentUpon>Realisation_formateur.cs</DependentUpon>
     </Compile>
@@ -207,26 +268,56 @@
     <Compile Include="Report1.Designer.cs">
       <DependentUpon>Report1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report1_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report1_2.Designer.cs">
+      <DependentUpon>Report1_2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Report2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Report2.Designer.cs">
       <DependentUpon>Report2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ajouter_Salle.cs" />
-    <Compile Include="Ajouter_Salle.Designer.cs">
-      <DependentUpon>Ajouter_Salle.cs</DependentUpon>
+    <Compile Include="Report3.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Report3.cs" />
     <Compile Include="Report3.Designer.cs">
       <DependentUpon>Report3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Avancement.cs" />
-    <Compile Include="Avancement.Designer.cs">
-      <DependentUpon>Avancement.cs</DependentUpon>
+    <Compile Include="Salle.cs">
+      <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Salle.Designer.cs">
+      <DependentUpon>Salle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Verification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Verification.Designer.cs">
+      <DependentUpon>Verification.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ajouter_Filiere.resx">
+      <DependentUpon>Ajouter_Filiere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_Formateur.resx">
+      <DependentUpon>Ajouter_Formateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_Groupe.resx">
+      <DependentUpon>Ajouter_Groupe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_Module.resx">
+      <DependentUpon>Ajouter_Module.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_Salle.resx">
+      <DependentUpon>Ajouter_Salle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Authentification.resx">
       <DependentUpon>Authentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Avancement.resx">
+      <DependentUpon>Avancement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultatio_Filiere.resx">
       <DependentUpon>Consultatio_Filiere.cs</DependentUpon>
@@ -246,43 +337,11 @@
     <EmbeddedResource Include="conventionelle.resx">
       <DependentUpon>conventionelle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModuleReport1_2.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ModuleReport1_2.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Report1_2.resx">
-      <DependentUpon>Report1_2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Edit etat_avc.resx">
-      <DependentUpon>Edit etat_avc.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Edit etat.resx">
       <DependentUpon>Edit etat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Emploi.resx">
-      <DependentUpon>Emploi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Execution.resx">
-      <DependentUpon>Execution.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ajouter_Filiere.resx">
-      <DependentUpon>Ajouter_Filiere.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ajouter_Formateur.resx">
-      <DependentUpon>Ajouter_Formateur.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gestion.resx">
-      <DependentUpon>Gestion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ajouter_Groupe.resx">
-      <DependentUpon>Ajouter_Groupe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="jourReport.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>jourReport.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ajouter_Module.resx">
-      <DependentUpon>Ajouter_Module.cs</DependentUpon>
+    <EmbeddedResource Include="Edit etat_avc.resx">
+      <DependentUpon>Edit etat_avc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Maj_Filiere.resx">
       <DependentUpon>Maj_Filiere.cs</DependentUpon>
@@ -299,9 +358,37 @@
     <EmbeddedResource Include="Maj_Salle.resx">
       <DependentUpon>Maj_Salle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModuleReport1.rpt">
+    <EmbeddedResource Include="ModuleReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ModuleReport1.cs</LastGenOutput>
+      <LastGenOutput>ModuleReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emploi.resx">
+      <DependentUpon>Emploi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Execution.resx">
+      <DependentUpon>Execution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filiere.resx">
+      <DependentUpon>Filiere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formateur.resx">
+      <DependentUpon>Formateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion.resx">
+      <DependentUpon>Gestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Groupe.resx">
+      <DependentUpon>Groupe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Impession.resx">
+      <DependentUpon>Impession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jourReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>jourReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module.resx">
+      <DependentUpon>Module.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -319,17 +406,20 @@
     <EmbeddedResource Include="Report1.resx">
       <DependentUpon>Report1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report1_2.resx">
+      <DependentUpon>Report1_2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report2.resx">
       <DependentUpon>Report2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ajouter_Salle.resx">
-      <DependentUpon>Ajouter_Salle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report3.resx">
       <DependentUpon>Report3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Avancement.resx">
-      <DependentUpon>Avancement.cs</DependentUpon>
+    <EmbeddedResource Include="Salle.resx">
+      <DependentUpon>Salle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verification.resx">
+      <DependentUpon>Verification.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
